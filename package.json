@@ -1,0 +1,25 @@
+{
+  "name": "oscarlarrotta",
+  "version": "1.0.0",
+  "description": "portafolio de Oscar Larrotta ",
+  "main": "index.js",
+  "scripts": {
+    "compile_pug": "pug ./source/pug --out ./",
+    "compile_sass": "node-sass ./source/sass/styles.scss > ./styles/",
+    "watch_sass": "node-sass --watch ./source/sass --recursive --output ./styles/ ",
+    "watch_pug": "pug ./source/pug --out ./ --watch",
+    "serve": "http-server ./"
+  },
+  "keywords": [
+    "portafolio",
+    "front-end",
+    "developer"
+  ],
+  "author": "Oscar Larrotta",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "node-sass": "^6.0.1", 
+    "pug": "^3.0.2"
+  }
+}
