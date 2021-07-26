@@ -1,0 +1,24 @@
+@import 'mixins','variables';
+
+.footer{
+  background:$green-light;
+  display: flex;
+  justify-content:flex-end;
+  
+  &__icons{
+    padding: size(2);
+    display: flex;
+  }
+
+  &__icons-size{
+    text-align: center;
+    width: size(6);
+    height: size(4);
+    max-height: 54px;
+    font-size: xx-large;
+    text-decoration: none;
+    cursor: pointer;
+    color:$green-dark;
+  }
+
+}

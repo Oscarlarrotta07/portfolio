@@ -1,6 +1,16 @@
 .header{
+ padding: size(4);
 
  &__name {
-  color: red;
+  text-align: center;
+  color: white;
+  @include font-size(3);
+  @include font-family(ele);
+  display: none;
+ }
+
+ &__logo {
+  width: 200px;
+  margin: 0 auto;
  }
 }

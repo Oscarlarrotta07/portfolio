@@ -1,0 +1,23 @@
+
+@mixin circle {
+ border-radius: 50%;
+}
+
+@mixin font-size($sizeValue: 1) {
+ font-size: $sizeValue + rem;
+}
+
+
+@mixin font-family($fontvalue: rob){
+ @if $fontvalue == rob {
+  font-family: 'Roboto', sans-serif;
+ }
+ @if $fontvalue == ele {
+  font-family: 'Electrolize', sans-serif;
+ } 
+}
+
+@function size($value: 1){
+ @return ($value * 8) + px;
+}
+

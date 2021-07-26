@@ -1,0 +1,52 @@
+@import 'mixins','variables';
+
+
+
+.robot {
+ width: 100%;
+ min-width: $robot-width;
+ min-height: $robot-width;
+ height: 0;
+ padding-bottom: 100%;
+ margin: 0 auto;
+ position: relative;
+ background: $main-color;
+ display: block;
+ @include circle;
+
+ &__eye {
+  background: $blue-dark;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  @include circle;
+
+  &:before {
+   content: '';
+   display: block;
+   width: 20%;
+   height: 20%;
+   background-color: $blue-light;
+   position: absolute;
+   left: 20%;
+   top: 20%;
+   @include circle;
+  }
+
+  &:after {
+   content: '';
+    display: block;
+    border: 3px $gray-dark solid;
+    position: absolute;
+    left: $eye-border;
+    top: $eye-border;
+    bottom: $eye-border;
+    right: $eye-border;
+  
+   @include circle;
+  }
+ }
+}

@@ -1,6 +1,16 @@
+@import'variables','mixins';
+
 .hero{
- &__title{
-  color: white;
-  font-size: 1.5rem;
+ padding: size(2);
+ // border: size(3) $green-dark solid;
+ @include font-family(ele);
+
+  &__title{
+   color: white;
+   @include font-size(2.4);
+ 
+  &-color{
+   color:$green-light ;
+  }
  }
 }

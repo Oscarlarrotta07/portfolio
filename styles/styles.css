@@ -306,12 +306,113 @@ template {
 [hidden] {
   display: none; }
 
-.header__name {
-  color: red; }
+.header {
+  padding: 32px; }
+  .header__name {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Electrolize', sans-serif;
+    display: none; }
+  .header__logo {
+    width: 200px;
+    margin: 0 auto; }
 
-.hero__title {
-  color: white;
-  font-size: 1.5rem; }
+.hero {
+  padding: 16px;
+  font-family: 'Electrolize', sans-serif; }
+  .hero__title {
+    color: white;
+    font-size: 2.4rem; }
+    .hero__title-color {
+      color: #90dfaa; }
+
+.robot {
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  height: 0;
+  padding-bottom: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #d8d8d8;
+  display: block;
+  border-radius: 50%; }
+  .robot__eye {
+    background: #30485c;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border-radius: 50%; }
+    .robot__eye:before {
+      content: '';
+      display: block;
+      width: 20%;
+      height: 20%;
+      background-color: #54c2ed;
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      border-radius: 50%; }
+    .robot__eye:after {
+      content: '';
+      display: block;
+      border: 3px #717171 solid;
+      position: absolute;
+      left: -10%;
+      top: -10%;
+      bottom: -10%;
+      right: -10%;
+      border-radius: 50%; }
+
+.footer {
+  background: #90dfaa;
+  display: flex;
+  justify-content: flex-end; }
+  .footer__icons {
+    padding: 16px;
+    display: flex; }
+  .footer__icons-size {
+    text-align: center;
+    width: 48px;
+    height: 32px;
+    max-height: 54px;
+    font-size: xx-large;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2b9984; }
+
+.description {
+  padding: 16px; }
+  .description__text {
+    color: #e6e6e6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; }
+
+.skills {
+  padding: 16px; }
 
 body {
-  background: black; }
+  background: #1f1f1f; }
+
+.title {
+  color: #90dfaa;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 2rem; }
+
+.list ul {
+  color: white;
+  margin: 16px 0; }
+
+.list > li {
+  font-size: 16px;
+  color: #2b9984;
+  font-family: 'Electrolize', sans-serif; }
+
+.list p {
+  color: #e6e6e6;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }

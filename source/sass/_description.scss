@@ -1,0 +1,9 @@
+.description {
+  padding: size(2);
+
+  &__text {
+    color:$gray;
+    @include font-family(rob);
+    @include font-size();
+  }
+}
