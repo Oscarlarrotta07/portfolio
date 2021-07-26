@@ -1,9 +1,9 @@
 - var projects = ['odontocitas','cmc','romecar'];
 
 section.projects
- h2.title Projectos
- .projects__elements  
+  h2.title Projectos
+  .projects__elements  
   each project in projects 
-    .projects__element 
-     img(src="/images/" + project + ".jpg", alt= "project " + project)
-     span.projects__subtitle #{project}
+    a.projects__element(href="https://github.com/Oscarlarrotta07")  
+      img(src="/images/" + project + ".jpg", alt= "project " + project)
+      span.projects__subtitle #{project}
