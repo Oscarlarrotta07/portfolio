@@ -391,9 +391,37 @@ template {
     color: #e6e6e6;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem; }
+  .description__code {
+    color: #90dfaa;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 48px; }
+  .description__log {
+    display: flex;
+    justify-content: space-evenly; }
+  .description__emoji {
+    font-size: 48px; }
 
 .skills {
   padding: 16px; }
+
+.projects {
+  padding: 16px; }
+  .projects__elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+  .projects__element {
+    height: 100px;
+    margin: 0 8px;
+    text-align: center; }
+    .projects__element img {
+      width: 100%;
+      height: 100px;
+      border-radius: 50%; }
+  .projects__subtitle {
+    display: block;
+    margin-top: 8px;
+    color: #2b9984;
+    font-family: 'Electrolize', sans-serif; }
 
 body {
   background: #1f1f1f; }
@@ -403,16 +431,22 @@ body {
   font-family: 'Electrolize', sans-serif;
   font-size: 2rem; }
 
-.list ul {
-  color: white;
-  margin: 16px 0; }
-
-.list > li {
-  font-size: 16px;
-  color: #2b9984;
-  font-family: 'Electrolize', sans-serif; }
-
-.list p {
-  color: #e6e6e6;
-  font-size: 16px;
+.list {
   font-family: 'Roboto', sans-serif; }
+  .list ul {
+    color: white;
+    margin: 16px 0; }
+  .list > li {
+    font-size: 16px;
+    color: #2b9984;
+    font-family: 'Electrolize', sans-serif; }
+  .list__title {
+    font-size: 24px;
+    color: #2b9984; }
+  .list__subtitle {
+    font-weight: bold;
+    color: white;
+    margin: 4px 0; }
+  .list__text {
+    color: #e6e6e6;
+    font-family: 'Roboto', sans-serif; }

@@ -6,7 +6,8 @@
  'robot',
  'footer',
  'description',
- 'skills';
+ 'skills',
+ 'projects';
 
 
 body {
@@ -21,6 +22,8 @@ body {
 
 .list {
 
+ @include font-family(rob);
+
  ul {
   color: white;
   margin: size(2) 0;
@@ -32,9 +35,21 @@ body {
   @include font-family(ele);
  }
 
- p{
+ &__title {
+  font-size: size(3);
+  color: $green-dark;
+ }
+
+ &__subtitle {
+  font-weight: bold;
+  color: white;
+  margin: size(0.5) 0;
+
+ }
+
+ &__text {
   color: $gray;
-  font-size: size(2);
+  
   @include font-family(rob);
  }
 }

@@ -6,4 +6,17 @@
     @include font-family(rob);
     @include font-size();
   }
+
+  &__code{
+    color: #90dfaa;
+    font-family: 'Electrolize', sans-serif;
+    font-size: size(6);
+  }
+  &__log{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__emoji{
+    font-size: size(6);
+  }
 }
