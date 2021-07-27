@@ -1,16 +1,21 @@
-@import'variables','mixins';
+.hero {
+  padding: size(2);
+  // border: size(3) $green-dark solid;
+  @include font-family(ele);
 
-.hero{
- padding: size(2);
- // border: size(3) $green-dark solid;
- @include font-family(ele);
+  &__title {
+    color: white;
+    @include font-size(2.4);
 
-  &__title{
-   color: white;
-   @include font-size(2.4);
- 
-  &-color{
-   color:$green-light ;
+    &-color {
+      color: $green-light;
+    }
   }
- }
+
+  @media ($mediaMedium) {
+    padding: size(3);
+    &__title {
+      @include font-size(5);
+    }
+  }
 }

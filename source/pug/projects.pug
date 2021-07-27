@@ -7,8 +7,8 @@ section.projects
     each project in projects 
       .projects__element 
         if isProd
-          img(src="/portfolio/images/" + project + ".jpg", alt= "project " + project)
+          img.projects__element-img(src="/portfolio/images/" + project + ".jpg", alt= "project " + project)
         else
-          img(src="/images/" + project + ".jpg", alt= "project " + project)
+          img.projects__element-img(src="/images/" + project + ".jpg", alt= "project " + project)
         span.projects__subtitle #{project}
       

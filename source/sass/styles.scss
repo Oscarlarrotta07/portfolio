@@ -1,55 +1,75 @@
-@import 'variables',
- 'mixins',
- 'normalize',
- 'header', 
- 'hero', 
- 'robot',
- 'footer',
- 'description',
- 'skills',
- 'projects';
-
+@import "variables", "mixins", "normalize", "header", "hero", "robot", "footer",
+  "description", "skills", "projects";
 
 body {
- background: $dark;
+  background: $dark;
 }
 
 .title {
- color: $green-light;
- @include font-family(ele);
- @include font-size(2);
+  margin-top: 0;
+  color: $green-light;
+  @include font-family(ele);
+  @include font-size(2);
+
+  @media ($mediaMedium) {
+    @include font-size(4);
+  }
 }
 
 .list {
-
- @include font-family(rob);
-
- ul {
-  color: white;
-  margin: size(2) 0;
- }
-
- > li {
-  font-size: size(2);
-  color: $green-dark;
-  @include font-family(ele);
- }
-
- &__title {
-  font-size: size(3);
-  color: $green-dark;
- }
-
- &__subtitle {
-  font-weight: bold;
-  color: white;
-  margin: size(0.5) 0;
-
- }
-
- &__text {
-  color: $gray;
-  
   @include font-family(rob);
- }
+
+  ul {
+    color: white;
+    margin: size(2) 0;
+  }
+
+  > li {
+    font-size: size(2);
+    color: $green-dark;
+    @include font-family(ele);
+  }
+
+  &__title {
+    font-size: size(3);
+    color: $green-dark;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    color: white;
+    margin: size(0.5) 0;
+  }
+
+  &__text {
+    color: $gray;
+
+    @include font-family(rob);
+  }
+
+  @media ($mediaMedium) {
+    ul {
+      color: white;
+      margin: size(3) 0;
+    }
+
+    > li {
+      font-size: size(4);
+    }
+
+    &__title {
+      font-size: size(4);
+      color: $green-dark;
+    }
+
+    &__subtitle {
+      font-size: size(3);
+    }
+
+    &__text {
+      color: $gray;
+
+      @include font-family(rob);
+    }
+  }
 }

@@ -1,28 +1,41 @@
-.projects{
- padding: size(2);  
- 
-  &__elements{
-   display: grid;
+.projects {
+  padding: size(2);
+
+  &__elements {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  &__element{
-    height: 100px;
+  &__element {
     margin: 0 size(1);
     text-align: center;
 
-    img{
-     width: 100%;
-     height: 100px;
-     border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100px;
+      border-radius: 50%;
     }
   }
-  &__subtitle{
-   display: block;
-   margin-top: size(1);
-   color: $green-dark;
-   @include font-family(ele);
+  &__subtitle {
+    display: block;
+    margin-top: size(1);
+    color: $green-dark;
+    @include font-family(ele);
   }
- 
+
+  @media ($mediaMedium) {
+    padding: size(3);
+    &__elements {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__element {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &__subtitle {
+      font-size: size(3);
+    }
+  }
 }
-
-

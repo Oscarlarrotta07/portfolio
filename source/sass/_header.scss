@@ -1,16 +1,27 @@
-.header{
- padding: size(4);
+.header {
+  padding: size(4);
 
- &__name {
-  text-align: center;
-  color: white;
-  @include font-size(3);
-  @include font-family(ele);
-  display: none;
- }
+  &__logo {
+    width: 200px;
+    margin: 0 auto;
+  }
 
- &__logo {
-  width: 200px;
-  margin: 0 auto;
- }
+  @media ($mediaMedium) {
+    height: 60px;
+    background: $green-dark;
+    padding: size();
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+
+    &__logo {
+      width: size(14);
+      margin: size(0);
+      position: relative;
+      top: 10px;
+    }
+    &__txname {
+      font-size: size(2);
+    }
+  }
 }

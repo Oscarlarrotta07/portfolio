@@ -1,3 +1,10 @@
 .skills {
- padding: size(2);
+  padding: size(2);
+
+  @media ($mediaMedium) {
+    &__list {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+  }
 }
