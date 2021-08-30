@@ -1,13 +1,13 @@
-- var projects = ['odontocitas','cmc','romecar'];
+- var projects = ['maloka','odontocitas','cmc','romecar'];
 - var isProd = true;
 
 section.projects
   h2.title Projectos
-  .projects__elements  
+  ul.projects__elements  
     each project in projects 
-      .projects__element 
+      li.projects__element 
         if isProd
-          img.projects__element-img(src="/portfolio/images/" + project + ".jpg", alt= "project " + project)
+          img.projects__element-img(src="/images/" + project + ".jpg", alt= "project " + project)
         else
           img.projects__element-img(src="/images/" + project + ".jpg", alt= "project " + project)
         span.projects__subtitle #{project}
