@@ -19,10 +19,12 @@
   "author": "Oscar Larrotta",
   "license": "ISC",
   "dependencies": {
+    "cli": "^1.0.1",
     "concurrently": "^6.2.1",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
     "http-server": "^0.12.3",
     "node-sass": "^6.0.1",
-    "pug": "^3.0.2",
-    "gulp-pug": "^5.0.0"
+    "pug": "^3.0.2"
   }
 }
